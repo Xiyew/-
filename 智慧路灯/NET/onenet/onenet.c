@@ -374,7 +374,7 @@ _Bool OneNet_DevLink(void)
 	
 }
 
-unsigned char OneNet_FillBuf(char *buf)
+uint16_t OneNet_FillBuf(char *buf)
 {
 	
 	char text[48];
@@ -441,11 +441,11 @@ void OneNet_SendData(void)
 	
 	MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};												//协议包
 	
-	char buf[256];
+	char buf[512];
 	
 	short body_len = 0, i = 0;
 	
-	UsartPrintf(USART_DEBUG, "Tips:	OneNet_SendData-MQTT\r\n");
+	//UsartPrintf(USART_DEBUG, "Tips:	OneNet_SendData-MQTT\r\n");
 	
 	memset(buf, 0, sizeof(buf));
 	
