@@ -16,7 +16,7 @@
 
 #include "string.h"
 
-
+/*同步更改推送测试*/
 #define ESP8266_ONENET_INFO		"AT+CIPSTART=\"TCP\",\"mqtts.heclouds.com\",1883\r\n"
 
 /*
