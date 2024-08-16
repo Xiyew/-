@@ -16,7 +16,7 @@
 
 #include "string.h"
 
-
+/*test*/
 #define ESP8266_ONENET_INFO		"AT+CIPSTART=\"TCP\",\"mqtts.heclouds.com\",1883\r\n"
 
 /*
